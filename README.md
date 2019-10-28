@@ -1,6 +1,7 @@
 [java-8-link]: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 [spark-link]:  https://spark.apache.org/downloads.html
 [win-utils-link]: https://github.com/jleetutorial/sparkTutorial/blob/winutils/winutils.exe
+[spark-tutorial-link]: https://github.com/jleetutorial/python-spark-tutorial
 
 
 # python-spark-local 
@@ -23,6 +24,8 @@ Optional - turn down log message level to ERROR only to reduce log noise.
 - go to `%SPARK_HOME%/conf`, take a copy of `log4j.properties.template` and rename it to just `log4j.properties`
 - edit `log4j.properties` change `log4j.rootCategory=INFO, console` to `log4j.rootCategory=ERROR, console`
 
+## Data Source
 
+- Data sourced from [jLeeTutorial Python-Spark-Tutorial][spark-tutorial-link]
 
 
