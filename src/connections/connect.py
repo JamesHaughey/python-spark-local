@@ -9,6 +9,7 @@ class ps_connection(object):
         self._cores = cores
         self._conf = SparkConf().setAppName(self._app_name).setMaster(f"local[{self._cores}]")
         self.sc = SparkContext.getOrCreate(conf=self._conf)
+        self.sql = SparkSession(self.sc)
         self.sc.setLogLevel(self._log_level)
     
     def __repr__(self):
